@@ -45,7 +45,7 @@ export function ForgotPassword(){
                 <div className="logo">
                     <div className="logoText">
                         <span>ZEN</span>
-                        cLASS
+                        CLASS
                     </div>
                 </div>
                 {invalidErrorMessage && <div className="invalidErrorMessage">{invalidErrorMessage}</div>}
