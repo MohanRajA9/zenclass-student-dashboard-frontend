@@ -51,7 +51,7 @@ export function Login() {
         <form className="loginContent" onSubmit={(e) => onLogin(e)}>
             <div className="logo">
                 <div className="logoText">
-                    <span>ZEN1</span>
+                    <span>ZEN</span>
                     CLASS
                 </div>
             </div>
