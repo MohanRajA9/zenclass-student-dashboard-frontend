@@ -52,7 +52,7 @@ export function Login() {
             <div className="logo">
                 <div className="logoText">
                     <span>ZEN</span>
-                    CLASS
+                    ccCLASS
                 </div>
             </div>
             {invalidErrorMessage && <div className="invalidErrorMessage">{invalidErrorMessage}</div>}
