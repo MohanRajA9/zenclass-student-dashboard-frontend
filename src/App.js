@@ -13,6 +13,7 @@ import { TopNavBar } from './containers/TopNavBar';
 import { ForgotPassword } from './containers/ForgotPassword';
 import { ResetPassword } from './containers/ResetPassword';
 import { Capstone } from './containers/Capstone';
+import { Queries } from './containers/Queries'
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/capstone" element={<Capstone />} />
+          <Route path="/queries" element={<Queries/>} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path={`reset-password/:id/:token`} element={<ResetPassword />} />
         </Routes>

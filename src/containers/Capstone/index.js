@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Card, CardContent } from "@mui/material";
 import { useEffect, useState } from "react";
 import "./capstone.css";
@@ -26,7 +27,7 @@ export function Capstone() {
                     <Card className="dashBoardcard" >
                         <CardContent className="dashBoardCardContent" >
                             <div>
-                                <h4>CAPSTONE PROJECT</h4>
+                                <h5>CAPSTONE PROJECT</h5>
                                 <h3>Zen Class Student Dashboard</h3>
                             </div>
                             <div>
@@ -35,7 +36,7 @@ export function Capstone() {
                         </CardContent>
                     </Card>
                 </div>
-                <div className="col-lg-12">
+                <div>
                     <Card className="dashBoardcard" >
                         <CardContent className="dashBoardCardContent" >
                             <div>

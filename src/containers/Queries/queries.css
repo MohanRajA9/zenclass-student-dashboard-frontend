@@ -1,0 +1,14 @@
+.queriesContainer {
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 105px;
+    height: -webkit-fill-available;;
+    width: calc(100% - 105px);
+    position: absolute;
+    scrollbar-width: thin;
+    margin-top: 20px;
+    
+}
