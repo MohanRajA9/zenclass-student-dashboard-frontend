@@ -1,0 +1,69 @@
+.dashBoardCardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.dashBoardcard {
+    width: 600px;
+    overflow: auto;
+}
+
+.dashBoardCardContent {
+    color: white;
+}
+
+.dashBoardCardContent img {
+    width: 40px;
+    height: 40px;
+}
+
+.dashboardCardContainer .dashBoardcard {
+    background-image: linear-gradient(to right, #2ebf91, #8360c3);
+}
+
+.dashboardCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.submissionCard {
+    color: #fff !important;
+    background-color: rgba(0, 0, 139, 0.2) !important;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 10%) !important;
+    height: fit-content;
+}
+
+.taskSubmissionForm input {
+    width: 70%;
+    height: 32px;
+    border-radius: 4px;
+    margin-top: 4px;
+    background-color: aliceblue !important;
+    padding-left: 8px;
+    /* background-color: rgba(138, 43, 226, 0.4);
+    border-color: rgba(138, 43, 226, 0.4); */
+}
+
+.capstoneContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 105px;
+    height: -webkit-fill-available;;
+    width: calc(100% - 105px);
+    position: absolute;
+    scrollbar-width: thin;
+    margin-top: 20px;
+    
+}
+
+.note {
+    color: darkgrey;
+}
+

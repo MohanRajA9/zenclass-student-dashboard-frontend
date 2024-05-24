@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Route, Routes, useLocation, Navigate, useNavigate} from "react-router-dom";
+import { Route, Routes, useLocation, Navigate, useNavigate } from "react-router-dom";
 import { Dashboard } from './containers/Dashboard';
 import { SideNavbar } from './containers/SideNavbar';
 import { Login } from './containers/Login';
@@ -12,6 +12,7 @@ import { Tasks } from './containers/Tasks';
 import { TopNavBar } from './containers/TopNavBar';
 import { ForgotPassword } from './containers/ForgotPassword';
 import { ResetPassword } from './containers/ResetPassword';
+import { Capstone } from './containers/Capstone';
 
 function App() {
   const location = useLocation();
@@ -20,7 +21,7 @@ function App() {
   const isCoursePage = location.pathname.includes("/courses/");
 
   const onNavClick = (navItem, type) => {
-    if(type === "signOut") {
+    if (type === "signOut") {
       localStorage.clear();
     }
     navigate(`${navItem}`);
@@ -30,21 +31,22 @@ function App() {
     <div className={!isLoginPage && localStorage.getItem("user") ? "appContainer" : ""}>
       {!isLoginPage && localStorage.getItem("user") && <TopNavBar />}
       <div className={!isLoginPage && localStorage.getItem("user") ? "bodyContainer" : "loginContainer"}>
-        {!isLoginPage && !isCoursePage && localStorage.getItem("user") && <SideNavbar onClick={onNavClick}/>}
+        {!isLoginPage && !isCoursePage && localStorage.getItem("user") && <SideNavbar onClick={onNavClick} />}
         <Routes>
           <Route path="/" element={<SignUp />} />
-          <Route path = "/login" element = {<Login/>} />
-          <Route path = "/signup" element = {<SignUp/>} />
-          <Route path= "/dashboard" element={<Dashboard />} />
-          <Route path = "/courses" element = {<Courses />} />
-          <Route path = "/courses/:courseId" element = {<CoursePage />} />
-          <Route path = "/classes" element = {<Classes />} />
-          <Route path = "/tasks" element = {<Tasks />} />
-          <Route path="/forgotpassword" element={<ForgotPassword />}/>
-          <Route path={`reset-password/:id/:token`} element={<ResetPassword />}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:courseId" element={<CoursePage />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/capstone" element={<Capstone />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path={`reset-password/:id/:token`} element={<ResetPassword />} />
         </Routes>
       </div>
-    </div>   
+    </div>
   );
 }
 
