@@ -24,7 +24,7 @@ export function SideNavbar({onClick, type}){
                 <div className="navBarItems">
                     <div className="dashboardWrapper" onClick={()=> onClick("/dashboard")}>
                         <img src={type === "course" ? "../Assets/dashboard.png": "./Assets/dashboard.png"}/>
-                        <h3>Dashboard</h3>
+                        <div>Dashboard</div>
                     </div>
                     <div className="coursesText" onClick={()=> onClick("/courses")}>
                         <img src={type === "course" ? "../Assets/courses.png": "./Assets/courses.png"}/>
@@ -45,6 +45,10 @@ export function SideNavbar({onClick, type}){
                     <div className="coursesText" onClick={()=> onClick("/queries")}>
                         <img src={type === "course" ? "../Assets/queries.png" : "./Assets/queries.png"}/>
                         <div>Queries</div>
+                    </div>
+                    <div className="coursesText" onClick={()=> onClick("/webcode")}>
+                        <img src={type === "course" ? "../Assets/webcode.png" : "./Assets/webcode.png"}/>
+                        <div>Web Code</div>
                     </div>
                 </div>
                 <div className="signOut" onClick={() => onClick("/login", "signOut")}>
